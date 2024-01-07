@@ -146,7 +146,7 @@ export async function fetchInvoicesPages(query: string) {
   `;
 
     const totalPages = Math.ceil(Number(count.rows[0].count) / ITEMS_PER_PAGE);
-    
+
     return totalPages;
   } catch (error) {
     console.error('Database Error:', error);
