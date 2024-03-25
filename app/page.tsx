@@ -2,7 +2,7 @@ import image from "@/public/business_chart.svg";
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
-import AcmeLogo from "./ui/acme-logo";
+import { AcmeLogo_Primary } from "./ui/acme-logo";
 import { lusitana } from "./ui/fonts";
 
 export default function Page() {
@@ -10,18 +10,17 @@ export default function Page() {
     <main className="flex min-h-screen flex-col p-6">
       {/* <div className="flex h-10 shrink-0 items-end rounded-lg bg-grey p-4 md:h-32">
     </div> */}
-        <AcmeLogo /> 
+        <AcmeLogo_Primary /> 
     
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
 
-            <h1 className="text-6xl  font-black  tracking-widest">Welcome to Acme.</h1> 
+            <h1 className="text-6xl  font-black  tracking-widest">Welcome to Finzy.</h1> 
 
-          <p className={`text-xl marker:font-thin	 text-gray-600 md:text-2xl md:leading-normal ${lusitana.className}`}>
+          <p className={`text-xl marker:font-thin	 text-gray-500 md:text-2xl md:leading-normal ${lusitana.className}`}>
            
-        Empower Your Business with Acme:Streamline Invoicing, Boost Sales, and Effortlessly Manage Your Operation s.
+        Empower Your Business with Finzy: Streamline Invoicing, Boost Sales, and Effortlessly Manage Your Operation s.
           </p>
-
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg  px-6 py-3 text-lg font-medium transition-colors bg-green-500 text-white hover:bg-green-400 hover:text-white duration-200"
@@ -50,5 +49,3 @@ export default function Page() {
     </main>
   );
 }
-
-
